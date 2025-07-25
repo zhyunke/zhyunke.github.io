@@ -6,19 +6,21 @@
     <style>
         body {
             font-family: "Microsoft YaHei", sans-serif;
-            line-height: 1.6;
-            margin: 40px;
+            font-size: 18px; /* 增大字体，适合手机阅读 */
+            line-height: 1.8; /* 增加行高，提升可读性 */
+            margin: 20px;
             background-color: #f9f9f9;
             color: #333;
         }
         h1, h2 {
             color: #2c3e50;
+            font-size: 1.6em; /* 标题也适当放大 */
         }
         .container {
             max-width: 900px;
             margin: auto;
             background: white;
-            padding: 30px;
+            padding: 20px; /* 适配小屏，减少内边距 */
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
@@ -29,6 +31,23 @@
             margin-top: 50px;
             font-size: 0.9em;
             color: #777;
+        }
+
+        /* 更小屏幕进一步优化 */
+        @media (max-width: 480px) {
+            body {
+                font-size: 17px;
+                margin: 15px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .container {
+                padding: 15px;
+            }
         }
     </style>
 </head>
